@@ -65,4 +65,4 @@ w = pla (X, y, w, maxiter, 0);
 % Plots the decision boundary based on the weight vector
 plotboundary (w, spc, "g-");
 
-legend ("Target function", "", "", "PLA boundary");
+legend ("Target function", "Positive example", "Negative example", "PLA boundary");
