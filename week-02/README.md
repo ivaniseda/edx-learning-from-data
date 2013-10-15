@@ -18,17 +18,23 @@ surface with a point marking the optimal ![w][w].
 
 ### Linear Regression + Perceptron Learning Algorithm (PLA)
 
-This plot shows the difference 
+This plot shows the difference between the target function ![f][f], the ![w][w]
+found via linear regression, and the ![wd][wd] found via PLA using ![w][w] as
+the initial weights.
+
+![linear regression pla](img/plot_lr_pla.png)
 
 ### Linear Regression With Nonlinear Transformation
 
-This plot shows the difference between the target function ![f][target] and
-the hypothesis ![g][g] found via linear regression on the space
-![Z][Z] after applying the transformation ![trans][trans].
+This plot shows the difference between the target function ![f][target]
+(in red) and the hypothesis ![g][g] (in green) found via linear regression on
+the ![Z][Z] space after applying the transformation ![trans][trans].
 
 ![nonlinear transformation](img/plot_lr_nonlinear.png)
 
 [w]: http://latex.codecogs.com/gif.latex?w
+[wd]: http://latex.codecogs.com/gif.latex?w%27
+[f]: http://latex.codecogs.com/gif.latex?f
 [g]: http://latex.codecogs.com/gif.latex?g
 [n10]: http://latex.codecogs.com/gif.latex?N%3D10
 [interval]: http://latex.codecogs.com/gif.latex?%5B-1%2C1%5D%5Ctimes%5B-1%2C1%5D
