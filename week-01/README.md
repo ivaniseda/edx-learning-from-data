@@ -9,10 +9,10 @@ There's also code to answer a few other questions about probability.
 
 This is a sample plot that shows the difference between the target function
 ![f][f] and the hypothesis ![g][g] found via PLA on 100 random points uniformly
-distributed between ![-1, 1][interval]
+distributed in ![between -1 and 1][interval]
 
 ![PLA](img/plot_pla.png)
 
 [f]: http://latex.codecogs.com/gif.latex?f
 [g]: http://latex.codecogs.com/gif.latex?g
-[interval]: http://latex.codecogs.com/gif.latex?%5B-1%2C1%5D
+[interval]: http://latex.codecogs.com/gif.latex?%5B-1%2C1%5D%5Ctimes%5B-1%2C1%5D
