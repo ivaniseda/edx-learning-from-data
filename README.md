@@ -22,8 +22,8 @@ submit your answer.
 
 ## How The Assignments Are Organized
 
-Code for each week are kept in their own directory with a README file that
-explains what is provided along with plots if there are any.
+Code for each week are kept in its own directory. Each directory contains
+a README file that explains what it provides.
 
 ## License (code)
 
