@@ -38,15 +38,15 @@ w = linearreg (X, y);
 % Labels assigned by w for each X
 hy = sign (X * w);
 
-figure (1);
+h = figure (1);
 hold on;
 
 title ("Nonlinear Hypothesis Demo");
 xlabel ("x_1");
 ylabel ("x_2");
 
-plot (X(pos,2), X(pos,3), "b+", "MarkerSize", 8);
-plot (X(neg,2), X(neg,3), "ko", "MarkerFaceColor", "y", "MarkerSize", 8);
+plot (X(pos,2), X(pos,3), "ko", "MarkerSize", 3, "MarkerFaceColor", "r");
+plot (X(neg,2), X(neg,3), "ko", "MarkerSize", 3, "MarkerFaceColor", "b");
 
 p = linspace (spc(1), spc(2), 100);
 [x1, x2] = meshgrid (p, p);
@@ -56,4 +56,9 @@ hf = @ (x1, x2) sign (addfeatures ([1 x1 x2]) * w);
 contour (x1, x2, arrayfun (hf, x1, x2), "g-");
 
 % Target function
-contour (x1, x2, arrayfun (@target, x1, x2), "r-");
+contour (x1, x2, arrayfun (@target, x1, x2), "m-");
+
+legend ("hide");
+
+% Uncomment the following line in order to save the plot to a PNG file
+% saveplot (h, 4, 3, "../img/plot_lr_nonlinear.png")

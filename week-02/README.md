@@ -8,9 +8,9 @@ linear regression with nonlinear transformations.
 ### Linear Regression
 
 To make sure my implementation of linear regression worked, I did a scatter
-plot with ![N=10][n10] uniformly distributed ![between -1 and 1][interval]
-along with the regression line, and a contour plot with the squared error
-surface with a point marking the optimal ![w][w].
+plot with ![N=10][n10] points uniformly distributed in
+![between -1 and 1][interval] along with the regression line, and a contour
+plot with the squared error surface with a point marking the optimal ![w][w].
 
 ![linear regression line](img/plot_lr_01.png)
 
@@ -18,9 +18,9 @@ surface with a point marking the optimal ![w][w].
 
 ### Linear Regression + Perceptron Learning Algorithm (PLA)
 
-This plot shows the difference between the target function ![f][f], the ![w][w]
-found via linear regression, and the ![wd][wd] found via PLA using ![w][w] as
-the initial weights.
+This plot shows the difference between the target function ![f][f] in magenta,
+the ![w][w] found via linear regression in yellow, and the ![wd][wd] found via
+PLA in green (it uses ![w][w] as the initial weights).
 
 ![linear regression pla](img/plot_lr_pla.png)
 

@@ -33,20 +33,25 @@ printf ("Values of w that minimizes the error: [%.2f %.2f]\n", wlin);
 printf ("In-sample squared error measure: %.2f\n", ein (wlin));
 
 % Plots the line represented by wlin with the data points
-figure (1);
+h1 = figure (1);
 hold on;
 
 title ("Linear Regression Demo");
-xlabel ("x values");
-ylabel ("y values");
+xlabel ("x");
+ylabel ("y");
 
-plot (X, y, "ko", "MarkerFaceColor", "b");
+plot (X, y, "ko", "MarkerSize", 3, "MarkerFaceColor", "b");
 fplot (@ (x) wf (x, wlin), [-1, 1], "r-");
-legend ("Data", "Regression line");
+legend ("hide");
+
+% Uncomment the following line in order to save the plot to a PNG file
+% saveplot (h1, 4, 3, "../img/plot_lr_01.png")
 
 % Plots the error surface and a point representing the global minimum
-figure (2);
+h2 = figure (2);
 hold on;
+
+grid on;
 
 title ("Squared Error Surface");
 xlabel ("w_0");
@@ -55,6 +60,9 @@ ylabel ("w_1");
 p = linspace (-1, 1, 50);
 [w0, w1] = meshgrid (p, p);
 
-plot (wlin(1), wlin(2), "ko", "MarkerFaceColor", "g");
+plot (wlin(1), wlin(2), "ko", "MarkerSize", 3, "MarkerFaceColor", "g");
 contour (w0, w1, arrayfun (@ (w0, w1) ein ([w0; w1]), w0, w1));
-legend ("Global minimum");
+legend ("hide");
+
+% Uncomment the following line in order to save the plot to a PNG file
+% saveplot (h2, 4, 3, "../img/plot_lr_02.png")

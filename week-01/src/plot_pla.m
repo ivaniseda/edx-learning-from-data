@@ -11,11 +11,12 @@ d = 2;
 % Number of examples, change this according to the question
 N = 100;
 
+h = figure (1);
 hold on;
 
 title (sprintf ("Perceptron Learning Algorithm (PLA) for N=%d", N));
-xlabel ("x values");
-ylabel ("y values");
+xlabel ("x_1");
+ylabel ("x_2");
 
 % X/Y range where the examples will be plotted
 spc = [-1 1];
@@ -44,11 +45,11 @@ while (1)
 end
 
 % Plots the equation created from the two points
-fplot (f, cat(2, spc, spc), "r-");
+fplot (f, cat(2, spc, spc), "m-");
 
 % Plots the examples
-plot (X(pos,1), X(pos,2), "b+", "MarkerSize", 8);
-plot (X(neg,1), X(neg,2), "ko", "MarkerFaceColor", "y", "MarkerSize", 8);
+plot (X(pos,1), X(pos,2), "ko", "MarkerSize", 3, "MarkerFaceColor", "b");
+plot (X(neg,1), X(neg,2), "ko", "MarkerSize", 3, "MarkerFaceColor", "r");
 
 % Introduce the synthetic dimension x0
 X = [ones(N, 1) X];
@@ -64,5 +65,7 @@ w = pla (X, y, w, maxiter, 0);
 
 % Plots the decision boundary based on the weight vector
 plotboundary (w, spc, "g-");
+legend ("hide");
 
-legend ("Target function", "Positive example", "Negative example", "PLA boundary");
+% Uncomment the following line in order to save the plot to a PNG file
+saveplot (h, 4, 3, "../img/plot_pla.png")

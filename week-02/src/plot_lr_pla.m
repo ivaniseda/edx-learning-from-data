@@ -11,6 +11,7 @@ d = 2;
 % Number of examples. Change this according to the question
 N = 100;
 
+h = figure (1);
 hold on;
 
 title ("PLA w/ Linear Regression");
@@ -52,11 +53,11 @@ end
 limits = cat (2, spc, spc);
 
 % Plots the equation created from the two points
-plotboundary (wf, limits, "r-");
+plotboundary (wf, limits, "m-");
 
 % Plots the examples
-plot (X(pos,2), X(pos,3), "b+", "MarkerSize", 8);
-plot (X(neg,2), X(neg,3), "ko", "MarkerFaceColor", "y", "MarkerSize", 8);
+plot (X(pos,2), X(pos,3), "ko", "MarkerSize", 3, "MarkerFaceColor", "r");
+plot (X(neg,2), X(neg,3), "ko", "MarkerSize", 3, "MarkerFaceColor", "b");
 
 % Maximum number of PLA iterations
 maxiter = 10000;
@@ -65,12 +66,14 @@ maxiter = 10000;
 w = linearreg (X, y);
 
 % Plots the decision boundary based on the weight vector
-plotboundary (w, limits, "m-x");
+plotboundary (w, limits, "y-");
 
 % Tune the weight vector w with the perceptron learning algorithm
 w = pla (X, y, w,  maxiter, 0);
 
 % Plots the final decision boundary
 plotboundary (w, limits, "g");
+legend ("hide");
 
-legend ("Target function", "Positive example", "Negative example", "Regression boundary", "PLA boundary");
+% Uncomment the following line in order to save the plot to a PNG file
+% saveplot (h, 4, 3, "../img/plot_lr_pla.png")
