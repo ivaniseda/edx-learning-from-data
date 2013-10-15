@@ -18,13 +18,12 @@ submit your answer.
 
 ## Requirements
 
-* [Octave](http://www.gnu.org/software/octave/) 2.6+
+* [Octave](http://www.gnu.org/software/octave/) 3.6+
 
 ## How The Assignments Are Organized
 
-Homeworks for each week are separated in their own directory inside
-`assignments`. The homework for each week have its own README that explains how
-to run the code.
+Code for each week are kept in their own directory with a README file that
+explains what is provided along with plots if there are any.
 
 ## License (code)
 
