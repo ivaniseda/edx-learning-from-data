@@ -1,8 +1,8 @@
-# Learning From Data - Homework code
+# Learning From Data - Homework Code
 
 This is the code I wrote in order to solve most of the assignments of
-[Learning From Data](http://work.caltech.edu/telecourse.html), a machine
-learning course by Caltech.
+[Learning From Data](https://www.edx.org/course/caltechx/cs1156x/learning-data/1120),
+a machine learning course by Caltech.
 
 **Disclaimer:** Don't follow this code blindly, it might be wrong. Use
 your judgement.
