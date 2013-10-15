@@ -27,7 +27,7 @@ PLA in green (it uses ![w][w] as the initial weights).
 ### Linear Regression With Nonlinear Transformation
 
 This plot shows the difference between the target function ![f][target]
-in red and the hypothesis ![g][g] in green, found via linear regression on
+in magenta and the hypothesis ![g][g] in green, found via linear regression on
 the ![Z][Z] space after applying the transformation ![trans][trans].
 
 ![nonlinear transformation](img/plot_lr_nonlinear.png)
