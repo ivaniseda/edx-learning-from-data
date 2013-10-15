@@ -73,4 +73,4 @@ w = pla (X, y, w,  maxiter, 0);
 % Plots the final decision boundary
 plotboundary (w, limits, "g");
 
-legend ("Target function", "Positive examples", "Negative examples", "Regression boundary", "PLA boundary");
+legend ("Target function", "Positive example", "Negative example", "Regression boundary", "PLA boundary");
