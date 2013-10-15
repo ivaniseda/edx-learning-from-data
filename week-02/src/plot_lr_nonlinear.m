@@ -41,9 +41,9 @@ hy = sign (X * w);
 figure (1);
 hold on;
 
-title ("Non-linear Hypothesis Demo");
-xlabel ("x values");
-ylabel ("y values");
+title ("Nonlinear Hypothesis Demo");
+xlabel ("x_1");
+ylabel ("x_2");
 
 plot (X(pos,2), X(pos,3), "b+", "MarkerSize", 8);
 plot (X(neg,2), X(neg,3), "ko", "MarkerFaceColor", "y", "MarkerSize", 8);

@@ -1,4 +1,4 @@
-addpath ("../common");
+addpath ("./common");
 
 clear all;
 close all;
