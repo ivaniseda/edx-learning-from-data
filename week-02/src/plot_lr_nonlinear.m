@@ -53,10 +53,10 @@ p = linspace (spc(1), spc(2), 100);
 
 % Hypothesis function
 hf = @ (x1, x2) sign (addfeatures ([1 x1 x2]) * w);
-contour (x1, x2, arrayfun (hf, x1, x2), "g-");
+contour (x1, x2, arrayfun (hf, x1, x2), 1, "g-", "linewidth", 5);
 
 % Target function
-contour (x1, x2, arrayfun (@target, x1, x2), "m-");
+contour (x1, x2, arrayfun (@target, x1, x2), 1, "m-", "linewidth", 5);
 
 legend ("hide");
 
