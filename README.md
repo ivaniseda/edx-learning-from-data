@@ -1,4 +1,4 @@
-# Learning From Data - Homework Solutions
+# Learning From Data - Solutions
 
 This is the code/math I wrote in order to solve most of the assignments of
 [Learning From Data](https://www.edx.org/course/caltechx/cs1156x/learning-data/1120),
