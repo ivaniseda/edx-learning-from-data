@@ -1,25 +1,6 @@
 1;
 
-% Probability that a single sample has at least one red ball is 1 minus the
-% probability that a single sample has no red balls:
-%
-% = 1 - (1-mu)^N
-% = 1 - 0.45^10
-% = 0.9996595
-%
-% The probability that all 1000 samples have at least one red ball is:
-%
-% = (1 - (1-mu)^N)^1000
-% = (1 - 0.45^10)^1000
-% = 0.9996595^1000
-% = 0.711
-%
-% The probability we want is that one or more samples have no red balls which
-% equals 1 minus the probability that all 1000 samples have at lease one
-% red ball:
-%
-% = 1 - 0.711
-% = 0.289
+% Solving this using Monte Carlo method
 
 function b = noRedMarble (N, mu)
   b = length (find (rand (N, 1) <= mu)) == 0;

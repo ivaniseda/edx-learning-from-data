@@ -1,18 +1,6 @@
 1;
 
-% Solving this exercise using a closed-form expression
-% ----------------------------------------------------
-%
-% P(B) = 1/2 * 1 + 1/2 * 1/2
-%      = 1/2 + 1/4
-%      = 3/4
-%
-% For the 2nd ball to be black, then I must have picked the 1st bag, so:
-%
-% P(1st bag | B) = P(1st bag ^ B) / P(B)
-%                = (1/2 * 1) / (3/4)
-%                = 4/6
-%                = 2/3
+% Solving this using Monte Carlo method
 
 % Number of times the experiment will run in order to average the probability
 iters = 9999;

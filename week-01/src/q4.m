@@ -1,11 +1,6 @@
 1;
 
-% The probability that a single sample has no red balls is the probability
-% that all N balls are not red
-%
-% = (1-mu)^N
-% = 0.45^10
-% = 0.0003405
+% Solving this using Monte Carlo method
 
 function b = noRedMarble (N, mu)
   b = length (find (rand (N, 1) <= mu)) == 0;
