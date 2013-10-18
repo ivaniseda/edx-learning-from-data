@@ -35,7 +35,7 @@ with the following subdirectories:
   <dd>Octave code that answers the more practical questions</dd>
 </dl>
 
-## License (code)
+## License
 
 Copyright (C) Daniel Fernandes Martins
 
