@@ -1,4 +1,4 @@
-# Code For Week #2
+# Week #2
 
 This homework was about the Hoeffding Inequality, noisy target functions and
 linear regression with nonlinear transformations.

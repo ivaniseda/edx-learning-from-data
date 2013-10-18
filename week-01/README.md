@@ -1,4 +1,4 @@
-# Code For Week #1
+# Week #1
 
 The main aspect of this homework is the implementation of a simple model called
 Perceptron Learning Algorithm (PLA).
