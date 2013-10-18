@@ -23,7 +23,17 @@ submit your answer.
 ## How The Assignments Are Organized
 
 Solutions for each week's homework are kept in its own directory. Each directory
-contains a README file that explains what it provides.
+contains a `README` file that explains the main purpose of the homework along
+with the following subdirectories:
+
+<dl>
+  <dt>/img</dt>
+  <dd>Figures and plots generated during my thinking process</dd>
+  <dt>/math</dt>
+  <dd>Explanations and solutions involving math</dd>
+  <dt>/src</dt>
+  <dd>Octave code that answers the more practical questions</dd>
+</dl>
 
 ## License (code)
 
