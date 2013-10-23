@@ -1,6 +1,7 @@
 # Week #4
 
-This week's homework was about bounds on generalization error and the [bias/variance tradeoff][biasvar].
+This week's homework was about bounds on generalization error and the
+[bias-variance tradeoff][biasvar].
 
 ## Plots
 
