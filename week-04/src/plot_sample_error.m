@@ -55,6 +55,7 @@ title ( sprintf ("Hypothesis Set Error With Sample N=%d", nsample));
 xlabel ("x");
 ylabel ("y");
 
+% Limit axis to spc
 axis (cat (2, spc, spc));
 
 for i = 1:iter
