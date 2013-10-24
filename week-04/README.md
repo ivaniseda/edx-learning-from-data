@@ -37,6 +37,16 @@ five different hypothesis sets on a very limited sample of ![N=2][N2] examples.
 
 ![quadratic model 2](./img/plot_sample_error_curve.png)
 
+### VC Dimension vs Growth Function
+
+In question #8, we are given a growth function and are asked to come up with a
+term that defines its VC dimension. The tricky part is that the growth function
+is recursive and depends on a parameter ![q][q].
+
+This plot shows the dependency between ![q][q] and the VC dimension:
+
+![vc dimension vs q](./img/plot_vc_q8.png)
+
 [biasvar]: http://scott.fortmann-roe.com/docs/BiasVariance.html
 [N2]: http://latex.codecogs.com/gif.latex?N%3D2
 [hconst]: http://latex.codecogs.com/gif.latex?h%28x%29%3Db
@@ -44,3 +54,4 @@ five different hypothesis sets on a very limited sample of ![N=2][N2] examples.
 [hline2]: http://latex.codecogs.com/gif.latex?h%28x%29%3Dax%2Bb
 [hcurve1]: http://latex.codecogs.com/gif.latex?h%28x%29%3Dax%5E2
 [hcurve2]: http://latex.codecogs.com/gif.latex?h%28x%29%3Dax%5E2%2Bb
+[q]: http://latex.codecogs.com/gif.latex?q
