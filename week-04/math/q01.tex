@@ -10,7 +10,7 @@
 
 \maketitle
 
-\textbf{Disclaimer.} This is the reasoning I used to solve question \#10; it
+\textbf{Disclaimer.} This is the reasoning I used to solve the problem; it
 may be wrong though. This is intended just as food for thought.
 
 \section{Simplifying The Original VC Bound}
@@ -44,19 +44,14 @@ $\epsilon=0.05$ and $\delta=0.05$ in the formula, we have:
 N \geq \frac{8}{0.05^2}\ln{\frac{4(2\cdot10^5)^{10}}{0.05}} \approx 404,617
 \end{equation*}
 
-We've missed by a long shot! If we feed $N=\numprint{404616}$ into the same
+We've missed by a long shot! If we feed $N=\numprint{404617}$ into the same
 equation:
 
 \begin{equation*}
 N \geq \frac{8}{0.05^2}\ln{\frac{4(2\cdot404617)^{10}}{0.05}} \approx 449,345
 \end{equation*}
 
-Keep doing this long enough so that $N$ converges to \numprint{452956}.
-
-\section{Solution}
-
-\begin{equation*}
-N\approx\numprint{450000}
-\end{equation*}
+Keep doing this long enough so that $N$ converges to approximately
+\numprint{452956}.
 
 \end{document}

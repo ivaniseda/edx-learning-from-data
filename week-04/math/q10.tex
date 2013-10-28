@@ -10,7 +10,7 @@
 
 \maketitle
 
-\textbf{Disclaimer.} This is the reasoning I used to solve question \#10; it
+\textbf{Disclaimer.} This is the reasoning I used to solve the problem; it
 may be wrong though. This is intended just as food for thought.
 
 \section{Finding The Lower Bound}
@@ -60,8 +60,7 @@ sets.
 
 \subsection{Intuition on $K-1+\sum_{k=1}^Kd_{vc}(\mathcal{H}_k)$}
 
-\textbf{Can we find two hypothesis sets that break that bound?} Well, let's
-take $N=3$ points and two new hypothesis sets,
+Now let's take $N=3$ points and two new hypothesis sets,
 $\mathcal{H}_3$ and $\mathcal{H}_4$. What if we could divide all eight
 dichotomies carefully between these two hypothesis sets so that both
 hypothesis sets have $d_{vc}=1$?
@@ -90,7 +89,13 @@ This is $\mathcal{H}_4$:
 
 Noticed something? Well, both hypothesis sets $\mathcal{H}_3$ and
 $\mathcal{H}_4$ have $d_{vc}=1$, but the union hypothesis set
-$\mathcal{H}_3\bigcup\mathcal{H}_4$ have $d_{vc}=3$.
+$\mathcal{H}_3\bigcup\mathcal{H}_4$ have $d_{vc}=3$. Also, since in this
+example $K=2$, the bound seems to hold.
+
+\subsubsection{Relation With $B(N,k)$}
+
+The analysis definitely has to do with $B(N, k)$, although I don't know how
+to prove it yet.
 
 \section{Solution}
 
