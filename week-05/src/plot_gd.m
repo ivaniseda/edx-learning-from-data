@@ -45,8 +45,6 @@ for epoch = 1:iters
   end
 end
 
-%
-
 axis ([-2 2 -2 2]);
 plot (ws(:,1), ws(:,2), "m-x", "MarkerSize", 3);
 legend ("", "Iterations");
