@@ -35,7 +35,7 @@ ws = [w'];
 for epoch = 1:iters
 
   % Updates the weights
-  w += -eta * errfuncgrad (w);
+  w += -eta * gradfunc (w);
 
   ws(epoch+1,:) = w';
 

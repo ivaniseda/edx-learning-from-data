@@ -18,6 +18,6 @@ iters = 15;
 w= ones (2, 1);
 
 % Runs coordinate descent
-[w, epoch] = cgd (w, eta, @errfunc, @errfuncgrad, errprec, iters);
+[w, epoch] = cgd (w, eta, @errfunc, @gradfunc, errprec, iters);
 
 fprintf ("Ein: %f\n", errfunc (w));

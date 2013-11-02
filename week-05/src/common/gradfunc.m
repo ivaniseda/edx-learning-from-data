@@ -1,5 +1,5 @@
 % Function that computes the gradient for the error surface
-function nw = errfuncgrad (w)
+function nw = gradfunc (w)
   u = w(1);
   v = w(2);
 

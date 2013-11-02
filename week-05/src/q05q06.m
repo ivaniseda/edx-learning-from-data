@@ -17,8 +17,8 @@ iters = 1000;
 % Initial weights
 w= ones (2, 1);
 
-% Runs gradient descent
-[w, epoch] = gd (w, eta, @errfunc, @errfuncgrad, errprec, iters);
+% Runs batch gradient descent
+[w, epoch] = gd (w, eta, @errfunc, @gradfunc, errprec, iters);
 
 fprintf ("Num of iterations: %d\n", epoch);
 fprintf ("Final value of w : (%f, %f)\n", w');
