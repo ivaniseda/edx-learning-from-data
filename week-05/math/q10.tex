@@ -39,9 +39,9 @@ This observation alone is enough to eliminate all possible options but this one:
 In the context of the Gradient Descent algorithm, the signal
 $\mathbf{w}^\mathsf{T}\mathbf{x}_n$ translates to a probability distribution
 that describes how a given example $\mathbf{x}_n$ will be classified; a largely
-positive signal means $P(y_n | \mathbf{x}_n) \approx 1$, as a largely negative
-signal means $P(y_n | \mathbf{x}_n) \approx 0$ , thanks to the logistic function
-$\theta$.
+positive signal means $P(y_n=1 | \mathbf{x}_n) \approx 1$, as a largely negative
+signal means $P(y_n=1 | \mathbf{x}_n) \approx 0$ , thanks to the logistic
+function $\theta$.
 
 In this particular error measure, the signal $\mathbf{w}^\mathsf{T}\mathbf{x}_n$
 is multiplied by the target label $y_n$. If both the signal and the target
