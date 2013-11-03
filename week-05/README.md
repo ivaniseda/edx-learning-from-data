@@ -18,4 +18,4 @@ descent steps on that surface, starting on the point ![(u,v)=(1,1)][point]:
 
 ![gradient descent steps](./img/plot_gd.png)
 
-[point]: http://latex.codecogs.com/gif.latex?%28u%2Cv%29%3D%281%2C1%29
+[point]: http://latex.codecogs.com/gif.latex?%28w_1%2Cw_2%29%3D%281%2C1%29
