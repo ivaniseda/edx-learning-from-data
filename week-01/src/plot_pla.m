@@ -68,4 +68,4 @@ plotboundary (w, spc, "g-");
 legend ("hide");
 
 % Uncomment the following line in order to save the plot to a PNG file
-saveplot (h, 4, 3, "../img/plot_pla.png")
+% saveplot (h, 4, 3, "../img/plot_pla.png")
