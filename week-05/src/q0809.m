@@ -32,7 +32,7 @@ rundata = [];
 for r = 1:runs
 
   % Generates the training examples for this run
-  [X y wf] = inputdata(spc, N, d);
+  [X y wf] = inputdata (spc, N, d);
 
   % Initial weights
   w = zeros (d+1, 1);
