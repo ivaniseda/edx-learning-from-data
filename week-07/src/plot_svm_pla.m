@@ -18,9 +18,6 @@ d = 2;
 % Number of times the experiment will be computed
 runs = 1000;
 
-% Hard-margin SVM
-C = 1e1000;
-
 % Linear kernel
 k = svmlinear ();
 
@@ -37,7 +34,7 @@ wpla = pla (X, y, w, 1000, 0);
 X = X(:, 2:size (X, 2));
 
 % Runs SVM
-[wsvm, sv] = svm (X, y, C, k, 100);
+[wsvm, sv] = svm (X, y, k, 100);
 
 h = figure (1);
 
