@@ -14,6 +14,9 @@ N = 10;
 % Number of dimensions
 d = 2;
 
+% Hard-margin SVM
+C = Inf;
+
 % Number of times the experiment will be computed
 runs = 1000;
 
@@ -38,7 +41,7 @@ for r = 1:runs
   X = X(:, 2:size (X, 2));
 
   % Runs SVM
-  [wsvm, sv] = svm (X, y, k, 100);
+  [wsvm, sv] = svm (X, y, k, C, 100);
 
   % Compares the two solutions
   rundata(r,1) = compeout (spc, wf, runs * 5, d, wsvm, wpla);

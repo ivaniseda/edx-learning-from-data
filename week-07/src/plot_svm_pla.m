@@ -15,6 +15,9 @@ N = 50;
 % Number of dimensions
 d = 2;
 
+% Hard-margin SVM
+C = Inf;
+
 % Number of times the experiment will be computed
 runs = 1000;
 
@@ -34,7 +37,7 @@ wpla = pla (X, y, w, 1000, 0);
 X = X(:, 2:size (X, 2));
 
 % Runs SVM
-[wsvm, sv] = svm (X, y, k, 100);
+[wsvm, sv] = svm (X, y, k, C, 100);
 
 h = figure (1);
 

@@ -1,5 +1,5 @@
 % Runs dual SVM and returns the weight vector and the support vectors
-function [w, sv] = svm (X, y, k, iters)
+function [w, sv] = svm (X, y, k, C, iters)
 
   % Number of examples
   N = length (X);
@@ -13,13 +13,19 @@ function [w, sv] = svm (X, y, k, iters)
 
   % Lower and upper bounds
   lb = zeros (N, 1);
-  ub = [];
+  ub = ones (N, 1) * C;
 
   % Other options
   options = optimset ("MaxIter", iters);
 
   % Quadratic coefficients
-  H = ((y * y') .* k (X, X));
+  H = [];
+
+  for i = 1:N
+    for j = 1:N
+      H(i,j) = y(i) * y(j) * k (X(i,:), X(j,:));
+    end
+  end
 
   % Initial guess for the alphas
   x0 = [];
@@ -41,8 +47,7 @@ function [w, sv] = svm (X, y, k, iters)
   w = sum (a(sv) .* y(sv) .* X(sv, :))';
 
   % Returns the b value using the first support vector found
-  fsv = sv(1);
-  b = y(fsv) - sum (a(sv) .* y(sv) .* k (X(sv, :), X(fsv, :)));
+  b = y(sv(1)) - sum (a(sv) .* y(sv) .* k (X(sv, :), X(sv(1), :)));
 
   % B is the x0
   w = [b; w];
