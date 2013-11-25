@@ -19,6 +19,7 @@ submit your answer.
 ## Requirements
 
 * [Octave](http://www.gnu.org/software/octave/) 3.6+
+* [LIBSVM](http://www.csie.ntu.edu.tw/~cjlin/libsvm/) 3.17
 
 ## How The Assignments Are Organized
 
