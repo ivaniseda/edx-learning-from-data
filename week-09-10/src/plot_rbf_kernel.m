@@ -49,5 +49,9 @@ neg = find (y < 0);
 plot (X(pos,1), X(pos,2), "bo", "MarkerSize", 3, "MarkerFaceColor", "b");
 plot (X(neg,1), X(neg,2), "ro", "MarkerSize", 3, "MarkerFaceColor", "r");
 
+% Highlights the support vectors
+p = X(model.sv_indices,:);
+plot (p(:, 1), p(:, 2), "ko", "MarkerSize", 5);
+
 % Uncomment the following line in order to save the plot to a PNG file
 % saveplot (h, 4, 3, "../img/plot_rbf_kernel.png");
