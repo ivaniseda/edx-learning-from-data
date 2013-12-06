@@ -7,13 +7,13 @@ the lectures, and it is twice as long as the previous assignments.
 
 ### SVM Geometry Question
 
-Question 11 proposes a set of 6 points and asks what [w][w] and [b][b] separates
-those points in the [Z][Z] space.
+Question 11 proposes a set of 6 points and asks what ![w][w] and ![b][b] separates
+those points in the ![Z][Z] space.
 
 ![q11](./img/plot_q11.png)
 
 Question 12 asks how many support vectors you would get if you want to separate
-those points in the [X][X] space by a polynomial kernel of degree [Q=2][Q2].
+those points in the ![X][X] space by a polynomial kernel of degree ![Q=2][Q2].
 
 ![q12](./img/plot_q12.png)
 
