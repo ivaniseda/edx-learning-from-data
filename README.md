@@ -42,7 +42,7 @@ with the following subdirectories:
 
 Copyright (C) Daniel Fernandes Martins. Distributed under the New BSD License.
 
-## Homework Assignments
+### Homework Assignments
 
 Copyright (C) [Yaser Abu-Mostafa](http://work.caltech.edu/index.html).
 All rights reserved.
