@@ -9,8 +9,8 @@ your judgement.
 
 ### A Note About The Honor Code
 
-The solutions are being released incrementally, one assignment at a time,
-after each deadline. According to the course staff, this is ok; in fact, the
+The solutions were released incrementally, one assignment at a time, after
+each deadline. According to the course staff, this is ok; in fact, the
 professor himself encourages the students to show their solutions.
 
 To fully enjoy the course, do not look at the solutions provided here until you
@@ -38,6 +38,11 @@ with the following subdirectories:
 
 ## License
 
-Copyright (C) Daniel Fernandes Martins
+### Code And Plots
 
-Distributed under the New BSD License. See LICENSE for further details.
+Copyright (C) Daniel Fernandes Martins. Distributed under the New BSD License.
+
+## Homework Assignments
+
+Copyright (C) [Yaser Abu-Mostafa](http://work.caltech.edu/index.html).
+All rights reserved.
