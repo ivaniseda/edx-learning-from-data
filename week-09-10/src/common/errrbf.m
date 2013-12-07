@@ -1,3 +1,4 @@
+% Returns the classification error for a RBF model for the given test set
 function err = errrbf (model, X, y)
 
   % Creates the phi matrix based on the original input

@@ -24,7 +24,7 @@ implement the K-means algorithm, which is an unsupervised learning algorithm for
 clustering.
 
 The following figure shows how a dataset with 100 points was clustered, and what
-the centroids for each cluster are.
+the centroids for each cluster were.
 
 ![kmeans](./img/plot_kmeans.png)
 

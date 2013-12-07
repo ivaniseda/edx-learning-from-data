@@ -1,3 +1,4 @@
+% Returns the phi matrix for RBF
 function z = phi (clusters, gamma, X)
 
   % Number of clusters

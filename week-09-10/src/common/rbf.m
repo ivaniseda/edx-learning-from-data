@@ -1,4 +1,4 @@
-% 
+% Trains a RBF model
 function model = rbf (X, y, gamma, K)
   model.ok = false;
   model.K = K;
